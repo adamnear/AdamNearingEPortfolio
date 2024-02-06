@@ -5,113 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Nearing Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-gray-100">
     <!-- Navbar -->
-    <nav style="background-color: #5D536B;" class="p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-white text-2xl font-bold"><a href="#" class="text-white">Adam Nearing</a></h1>
-            <div class="col-span-6 col-start-2">
-                <ul class="flex space-x-4">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <ul>
                     <li><a href="#" class="text-white font-bold">Home</a></li>
                     <li><a href="#" class="text-white font-bold">Contact</a></li>
                     <li><a href="#" class="text-white font-bold">About Me</a></li>
+                    <li><a href="#" class="text-white font-bold">github</a></li>
+                    <li><a href="#" class="text-white font-bold">linkedIn</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mx-auto my-8 p-8 bg-white rounded-lg shadow-lg grid" style="background-color: #ADB6C4;">
-        <div class="container mx-auto my-2 p-2 bg-white rounded-lg grid grid-cols-1 md:grid-cols-3 gap-2">
-            <div class="col-span-1 h-80 flex items-center justify-center">
-                <div class="card p-2 rounded-lg text-center mx-auto">
+    <!-- Title -->
+    <div class="title-content">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="name">Adam Nearing</h1>
+                    <h2 class="roles">IT Programmer / Media Creator</h2>
+                    <div class="btn-container">
+                        <button class="btn-primary">My Resume</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="card">
                     <div class="card-content">
-                        <p class="text-lg font-bold mb-2">The work that I do:</p>
-                        <ul class="mb-4">
-                            <div class="card bg-gray-200 p-4 rounded-lg shadow-lg mb-4">
-                                <li><strong>Programming Work</strong> - I'm a current student at NSCC in IT
-                                    Programming.
-                                    <a href=" #imageSection"><strong>Click to see more</strong></a>
-                                </li>
-                            </div>
-                            <div class="card bg-gray-200 p-4 rounded-lg shadow-lg mb-8">
-                                <li><strong>Media Work</strong> - I'm a past student at NSCAD with a BFA in Film
-                                    Studies.
-                                </li>
-                            </div>
+                        <h3>The work that I do...</h3>
+                        <ul class="work-list">
+                            <li>
+                                <strong>Programming</strong> - I'm a current student at NSCC in IT Programming.
+                                <a href="#programmingWork"><strong>Click to see more</strong></a>
+                            </li>
+                            <li>
+                                <strong>Media</strong> - I'm a past student at NSCAD with a BFA in Film Studies.
+                                <a href="#mediaWork"><strong>Click to see more</strong></a>
+                            </li>
                         </ul>
-                        <div style="background-color: #E16F7C;"
-                            class="card p-2 rounded-lg shadow-lg text-center mx-auto inline-block">
-                            <button class="js-modal-trigger btn-primary inline-flex items-center">
-                                👋Say Hello!👋
-                            </button>
-                        </div>
                     </div>
                 </div>
+                <div class="image-container">
+                    <img src="src/img/Me.jpg" alt="Me" class="image">
+                </div>
             </div>
 
-            <!-- Image -->
-            <div class="col-span-2 flex items-end">
-                <div class="card mx-auto">
-                    <div class="card-content text-center">
-                        <div class="mb-2">
-                            <img src="src/img/Me.jpg" alt="Me" class="w-80 h-100 mx-auto">
+            <!-- My work -->
+            <div class="work-container">
+                <div id="imageSection" class="work-section">
+                    <div class="grid">
+                        <div class="work-item">
+                            <p class="text-2xl"><strong>Little Symphony Inc.</strong> - Summer 2023 Internship</p>
+                            <img src="src/img/Relaxation Space.png" alt="Relaxation Space" class="work-image">
                         </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <div class="modal" id="modal-js-example">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box text-center">
-                    <p>My email is adamnearing14@gmail.com - Contact now!</p>
-                </div>
-            </div>
-            <button class="modal-close btn-secondary" aria-label="close"></button>
-        </div> -->
-
-        <!-- My work -->
-        <div class="container mx-auto p-10 bg-white rounded-lg">
-
-            <div class="container mx-auto my-8 p-8 bg-white rounded-lg">
-                <div class="grid grid-cols-1 gap-8">
-                    <div id="imageSection" class="mb-4">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div class="mb-4">
-                                <p class="text-2xl"><strong>Little Symphony Inc.</strong> - Summer 2023 Internship</p>
-                                <img src="src/img/Relaxation Space.png" alt="Relaxation Space"
-                                    class="w-120 h-120 mx-auto">
-                            </div>
-                            <div class="mb-4">
-                                <p class="text-2xl"><strong>Poker Simulator</strong> - Fall 2023 JavaScript Assignment
-                                </p>
-                                <img src="src/img/Poker Simulator.png" alt="Poker Simulator"
-                                    class="w-120 h-120 mx-auto">
-                            </div>
-                            <div>
-                                <p class="text-2xl"><strong>Jazz Theatre</strong> - Winter 2023 HTML Assignment</p>
-                                <img src="src/img/Jazz Theatre .png" alt="Jazz Theatre" class="w-120 h-120 mx-auto">
-                            </div>
-                            <div>
-                                <p class="text-2xl"><strong>Three in a row puzzle </strong> - Fall 2023 JavaScript
-                                    Assignment</p>
-                                <img src="src/img/puzzle.png" alt="threeinarow" class="w-120 h-120 mx-auto">
-                            </div>
+                        <div class="work-item">
+                            <p class="text-2xl"><strong>Poker Simulator</strong> - Fall 2023 JavaScript Assignment</p>
+                            <img src="src/img/Poker Simulator.png" alt="Poker Simulator" class="work-image">
+                        </div>
+                        <div class="work-item">
+                            <p class="text-2xl"><strong>Jazz Theatre</strong> - Winter 2023 HTML Assignment</p>
+                            <img src="src/img/Jazz Theatre .png" alt="Jazz Theatre" class="work-image">
+                        </div>
+                        <div class="work-item">
+                            <p class="text-2xl"><strong>Three in a row puzzle </strong> - Fall 2023 JavaScript
+                                Assignment
+                            </p>
+                            <img src="src/img/puzzle.png" alt="threeinarow" class="work-image">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <script src="./main.js"></script>
+        <script src="./main.js"></script>
 </body>
 
 </html>

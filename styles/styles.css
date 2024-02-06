@@ -1,0 +1,126 @@
+/* Navbar */
+.navbar {
+    background-color: #5D536B;
+    padding: 1rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.navbar .nav-links ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #ADB6C4;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.work-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.work-list li {
+    margin-bottom: 1rem;
+}
+
+.btn-container {
+    background-color: #E16F7C;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Resume button */
+
+.btn-container {
+    text-align: center;/
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Profile picture */
+.image-container {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.image-container img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Work Section */
+.work-container {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.work-item {
+    margin-bottom: 2rem;
+}
+
+.work-image {
+    width: 400px;
+    margin: auto;
+    display: block;
+}
