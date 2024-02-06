@@ -36,8 +36,10 @@
 
 /* Main Content */
 .main-content {
-    background-color: #ADB6C4;
     padding: 2rem;
+    background-image: url('src/img/backgroundImg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .card {
@@ -97,7 +99,6 @@
 /* Profile picture */
 .image-container {
     text-align: center;
-    /* Center the image horizontally */
 }
 
 .image-container img {
