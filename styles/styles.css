@@ -43,30 +43,33 @@
 }
 
 .card {
-    background-color: #FFFFFF;
+    background-color: #ce9c9c;
+    margin: auto;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding-top: 30vh;
     margin-bottom: 2rem;
+    height: 60vh;
+    width: 80vw;
 }
 
 .card-content {
     text-align: center;
+    height: 80vh;
+    width: 80vw;
 }
 
-.work-list {
-    list-style-type: none;
-    padding: 0;
-}
+.name {}
 
-.work-list li {
-    margin-bottom: 1rem;
-}
+/* Resume button */
 
 .btn-container {
     background-color: #E16F7C;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+    padding: 0.25rem;
+    height: 35px;
+    width: 180px;
+    margin: auto;
+    border-radius: 0.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 1rem;
 }
@@ -79,10 +82,8 @@
     font-weight: bold;
 }
 
-/* Resume button */
-
 .btn-container {
-    text-align: center;/
+    text-align: center;
 }
 
 .btn-primary {
@@ -91,7 +92,7 @@
     border: none;
     cursor: pointer;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 1.2rem;
     border-radius: 5px;
 }
@@ -124,4 +125,13 @@
     width: 400px;
     margin: auto;
     display: block;
+}
+
+.work-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.work-list li {
+    margin-bottom: 1rem;
 }
