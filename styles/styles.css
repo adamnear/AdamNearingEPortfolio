@@ -103,28 +103,28 @@
 }
 
 .image-container img {
-    max-width: 20%;
+    max-width: 60%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* Work Section */
 .work-container {
     background-color: #FFFFFF;
     border-radius: 0.5rem;
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 2rem;
+
 }
 
-.work-item {
-    margin-bottom: 2rem;
-}
 
 .work-image {
     width: 400px;
     margin: auto;
     display: block;
+    padding: 2rem;
+
 }
 
 .work-list {
