@@ -34,10 +34,27 @@
     text-decoration: none;
 }
 
+/* Title Content */
+.title-content {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.title-card {
+    background-color: #ce9c9c;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 30vh;
+    margin-bottom: 2rem;
+    height: 20vh;
+    width: 80vw;
+}
+
 /* Main Content */
 .main-content {
     padding: 2rem;
-    background-image: url('src/img/backgroundImg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -59,7 +76,10 @@
     width: 80vw;
 }
 
-.name {}
+.main-content {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+}
 
 /* Resume button */
 
@@ -115,7 +135,8 @@
     border-radius: 0.5rem;
     padding: 1rem;
     margin-top: 2rem;
-
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
 }
 
 
