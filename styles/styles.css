@@ -1,6 +1,11 @@
+/* Page background */
+.page {
+    background-color: rgb(217, 217, 208);
+}
+
 /* Navbar */
 .navbar {
-    background-color: #5D536B;
+    background-color: #768da8;
     padding: 1rem;
 }
 
@@ -39,17 +44,15 @@
     font-family: "Arial", sans-serif;
     font-size: 24px;
     letter-spacing: 1px;
+
 }
 
 .title-card {
-    background-color: #ce9c9c;
+    background-image: url('../src/img/backgroundImg.jpg');
     margin: auto;
-    border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-top: 30vh;
-    margin-bottom: 2rem;
-    height: 20vh;
-    width: 80vw;
+    height: 40vh;
+    width: 100vw;
 }
 
 /* Main Content */
@@ -60,7 +63,7 @@
 }
 
 .card {
-    background-color: #ce9c9c;
+    background-color: #e3e3e3;
     margin: auto;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,6 +71,8 @@
     margin-bottom: 2rem;
     height: 60vh;
     width: 80vw;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-content {
@@ -80,6 +85,8 @@
     font-family: "Arial", sans-serif;
     font-size: 18px;
 }
+
+
 
 /* Resume button */
 
@@ -127,16 +134,97 @@
     height: auto;
     display: block;
     margin: auto;
+    border-radius: 0.25rem;
+
+}
+
+/* work Sidebar */
+.worksidebarcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e3e3;
+    padding: 3rem;
+    border-radius: 10rem;
+    width: 5px;
+    height: 70px;
+    margin-top: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.code-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../src/img/codeicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.camera-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../src/img/cameraicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* contact Sidebar */
+.sidebarcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e3e3;
+    padding: 3rem;
+    border-radius: 10rem;
+    width: 5px;
+    height: 70px;
+    margin-top: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.github-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../src/img/githubicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.linkedin-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../src/img/linkedinicon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 /* Work Section */
-.work-container {
+.work-card {
     background-color: #FFFFFF;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-top: 2rem;
     font-family: "Arial", sans-serif;
     font-size: 18px;
+}
+
+.work-container {
+    background-color: #e3e3e3;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 30vh;
+    margin-bottom: 2rem;
+    height: 600vh;
+    width: 80vw;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -155,4 +243,35 @@
 
 .work-list li {
     margin-bottom: 1rem;
+}
+
+/* Contact */
+.contact-container {
+    background-color: #e3e3e3;
+    margin: auto;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    padding-top: 30vh;
+    margin-bottom: 2rem;
+    height: 30vh;
+    width: 80vw;
+}
+
+/* Skills */
+.skills-item {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    font-family: "Arial", sans-serif;
+    width: 250px;
+}
+
+.skills-icon {
+    width: 200px;
+    margin: auto;
+    display: block;
+    padding: 2rem;
 }
