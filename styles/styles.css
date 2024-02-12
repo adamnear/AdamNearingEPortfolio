@@ -262,8 +262,9 @@
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-top: 30vh;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     margin-bottom: 2rem;
-    height: 600vh;
+    height: 500vh;
     width: 80vw;
     border: 2px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
@@ -292,11 +293,14 @@
 .skills-item {
     background-color: #FFFFFF;
     border-radius: 0.5rem;
-    margin-top: 2rem;
     margin-right: 1rem;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills-icon {
@@ -304,4 +308,19 @@
     margin: auto;
     display: block;
     padding: 2rem;
+}
+
+.cutting-line {
+    position: relative;
+    display: inline-block;
+}
+
+.cutting-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(60vw / 6);
+    width: 60vw;
+    height: 2px;
+    background-color: black;
 }
