@@ -7,6 +7,13 @@
 .navbar {
     background-color: #768da8;
     padding: 1rem;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-title {
+    font-style: italic;
 }
 
 .navbar .container {
@@ -41,7 +48,7 @@
 
 /* Title Content */
 .card-content {
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     font-size: 24px;
     letter-spacing: 1px;
     display: inline-block;
@@ -61,6 +68,7 @@
     padding: 2rem;
     background-size: cover;
     background-position: center;
+
 }
 
 .card {
