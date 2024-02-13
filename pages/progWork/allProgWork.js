@@ -9,3 +9,34 @@ Work will include:
 
 
 */
+
+// Function to add hover effect and demo text overlay
+function addHoverEffectWithDemoText(element) {
+    const textOverlay = document.createElement('div');
+    textOverlay.classList.add('text-overlay');
+    textOverlay.style.display = 'none';
+    element.appendChild(textOverlay);
+
+    element.addEventListener('mouseenter', () => {
+        element.style.transform = 'scale(1.05)';
+        textOverlay.style.display = 'block';
+    });
+
+    element.addEventListener('mouseleave', () => {
+        element.style.transform = 'scale(1)';
+        textOverlay.style.display = 'none';
+    });
+
+}
+
+// Select and apply hover effect with demo text overlay to relaxation-space
+const relaxationSpace = document.querySelector('.relaxation-space');
+addHoverEffectWithDemoText(relaxationSpace);
+
+// Select and apply hover effect with demo text overlay to poker-hand
+const pokerHand = document.querySelector('.poker-hand');
+addHoverEffectWithDemoText(pokerHand);
+
+// Select and apply hover effect with demo text overlay to puzzle-game
+const puzzleGame = document.querySelector('.puzzle-game');
+addHoverEffectWithDemoText(puzzleGame);

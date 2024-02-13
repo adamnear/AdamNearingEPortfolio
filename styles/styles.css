@@ -68,7 +68,7 @@
     font-size: 24px;
     letter-spacing: 1px;
     display: inline-block;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.742);
 }
 
 .title-card {
@@ -79,7 +79,6 @@
     margin: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 40vh;
-    width: 98vw;
     text-align: center;
 }
 
@@ -131,7 +130,7 @@
     width: 180px;
     margin: auto;
     border-radius: 0.25rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.703);
 }
 
 .btn-primary {
@@ -140,6 +139,8 @@
     border: none;
     cursor: pointer;
     font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.263);
+
 }
 
 .btn-container {
@@ -316,6 +317,7 @@ input[name="message"] {
     margin-top: 2rem;
     font-family: "Arial", sans-serif;
     font-size: 18px;
+    margin-left: 140px;
 }
 
 .work-container {
@@ -333,11 +335,10 @@ input[name="message"] {
 
 
 .work-image {
-    width: 400px;
+    width: 780px;
     margin: auto;
     display: block;
     padding: 2rem;
-
 }
 
 .work-list {
@@ -354,7 +355,8 @@ input[name="message"] {
 .skills-item {
     background-color: #FFFFFF;
     border-radius: 0.5rem;
-    margin-right: 1rem;
+    margin-right: -130px;
+    margin-left: calc(140px + 1px);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
     font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     width: 120px;
@@ -384,4 +386,128 @@ input[name="message"] {
     width: 50vw;
     height: 2px;
     background-color: black;
+}
+
+
+/* ----------- For smaller screens ---------*/
+
+@media screen and (max-width: 1080px) {
+
+    /* Navbar */
+    .navbar .logo a {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-links ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* Title Content */
+    .card-content {
+        font-size: 14px;
+    }
+
+    .title-card {
+        height: 20vh;
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    /* Profile picture */
+    .image-container img {
+        max-width: 90%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    .navbar .logo a {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-links ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* Title Content */
+    .card-content {
+        font-size: 12px;
+    }
+
+    .title-card {
+        height: 15vh;
+    }
+
+    /* Main Content */
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me table {
+        width: 100%;
+    }
+
+    .about-me td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    /* Profile picture */
+    .image-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* Navbar */
+    .navbar .logo a {
+        font-size: 0.8rem;
+    }
+
+    .navbar .nav-links ul li a {
+        font-size: 0.7rem;
+    }
+
+    /* Title Content */
+    .card-content {
+        font-size: 10px;
+    }
+
+    .title-card {
+        height: 10vh;
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 0.5rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    /* Profile picture */
+    .image-container img {
+        max-width: 70%;
+    }
 }
