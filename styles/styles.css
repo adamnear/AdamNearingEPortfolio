@@ -318,6 +318,8 @@ input[name="message"] {
     font-family: "Arial", sans-serif;
     font-size: 18px;
     margin-left: 140px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 .work-container {
@@ -327,7 +329,7 @@ input[name="message"] {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     margin-bottom: 2rem;
-    height: 500vh;
+    height: auto;
     width: 80vw;
     border: 2px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
@@ -335,7 +337,7 @@ input[name="message"] {
 
 
 .work-image {
-    width: 780px;
+    max-width: 90%;
     margin: auto;
     display: block;
     padding: 2rem;
@@ -509,5 +511,53 @@ input[name="message"] {
     /* Profile picture */
     .image-container img {
         max-width: 70%;
+    }
+}
+
+/* ------- work Page --------*/
+@media screen and (max-width: 768px) {
+    .work-container {
+        width: 90vw;
+    }
+
+    .work-card {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .cutting-line {
+        margin-left: 20px;
+    }
+
+    .cutting-line::after {
+        left: calc(60vw / 3);
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .work-card {
+        max-width: 80%;
+        /* Adjust max-width for larger screens */
+        margin-left: auto;
+        /* Center the work card horizontally */
+        margin-right: auto;
+        /* Center the work card horizontally */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .work-card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cutting-line {
+        margin-left: 20px;
+    }
+
+    .cutting-line::after {
+        left: calc(60vw / 3);
+        width: 40vw;
     }
 }
