@@ -90,19 +90,31 @@
 
 }
 
-.card {
+.container2 {
     background-color: #e3e3e3;
     margin: auto;
+    display: flex;
+    flex-direction: row;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding: 4rem 2rem;
     margin-bottom: 2rem;
-    height: 60vh;
-    width: 80vw;
+    /* height: 60vh; */
+    max-width: 80vw;
     border: 2px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    height: 70vh;
+    width: 80vw;
+} */
 
 .card-content {
     text-align: center;
@@ -161,17 +173,18 @@
 }
 
 /* Profile picture */
-.image-container {
+/* .image-container {
     text-align: center;
-}
+} */
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
+    width: 100%;
+    /* height: auto; */
+    /* display: block; */
+    /* margin: 9rem; */
+    /* margin: auto 2rem; */
     border-radius: 0.25rem;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 /* link-to-work Sidebar */
@@ -254,12 +267,13 @@
     align-items: center;
     background-color: #e3e3e3;
     margin: auto;
+    padding: 4rem 2rem;
     border-radius: 0.5rem;
     border: 2px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
     height: 70vh;
-    width: 80vw;
+    max-width: 80vw;
 }
 
 .contact-content {
@@ -423,9 +437,27 @@ input[name="message"] {
     }
 
     /* Profile picture */
-    .image-container img {
+    /* .image-container img {
         max-width: 90%;
         margin-left: 0;
+    } */
+    .image-container img {
+        width: 50%;
+        /* margin: auto; */
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
     }
 }
 
@@ -454,28 +486,19 @@ input[name="message"] {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .about-me table {
         width: 100%;
-    }
-
-    .about-me td {
         padding: 10px;
         text-align: center;
         vertical-align: middle;
     }
 
     /* Profile picture */
-    .image-container {
+    /* .image-container {
         margin-top: 20px;
         text-align: center;
-    }
+    } */
 
-    .image-container img {
-        max-width: 100%;
-        margin: auto;
-    }
+
 }
 
 
@@ -509,9 +532,9 @@ input[name="message"] {
     }
 
     /* Profile picture */
-    .image-container img {
+    /* .image-container img {
         max-width: 70%;
-    }
+    } */
 }
 
 /* ------- work Page --------*/
