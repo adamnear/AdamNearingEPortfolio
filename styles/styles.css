@@ -97,7 +97,7 @@
     flex-direction: row;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
     margin-bottom: 2rem;
     /* height: 60vh; */
     max-width: 80vw;
@@ -437,6 +437,9 @@ input[name="message"] {
     position: relative;
     display: inline-block;
     margin-left: 140px;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    font-style: italic;
+    margin-top: 2rem;
 }
 
 .cutting-line::after {
@@ -701,10 +704,6 @@ input[name="message"] {
         margin-right: 15px;
     }
 
-    .container2 {
-        margin-top: 13rem;
-    }
-
     .cutting-line {
         margin-left: 20px;
     }
@@ -741,8 +740,15 @@ input[name="message"] {
         left: calc(60vw / 5);
         width: 50vw;
     }
+}
 
-    .container2 {
-        margin-top: 11rem;
+@media screen and (max-width: 480px) {
+    .cutting-line {
+        margin-left: 20px;
+    }
+
+    .cutting-line::after {
+        left: calc(60vw / 3);
+        width: 40vw;
     }
 }
