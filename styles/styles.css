@@ -263,24 +263,23 @@
 
 /* contact Sidebar */
 
-.github-icon {
+/* .github-icon {
     display: inline-block;
     width: 50px;
     height: 50px;
     background-image: url('../src/img/githubicon.png');
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 .linkedin-icon {
     display: inline-block;
     width: 50px;
     height: 50px;
     margin-top: 10px;
-    background-image: url('../src/img/linkedinicon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
+    margin-bottom: 8px;
 }
 
 /* Contact */
@@ -516,37 +515,9 @@ input[name="message"] {
         margin-left: 0;
     } */
 
-    /* Side bars*/
-    .worksidebarcontainer {
-        width: 90%;
-        /* Set width to 90% of the screen width */
-        max-width: 35rem;
-        /* Limit width to 35rem */
-        margin-top: 2rem;
-        /* Adjust margin for smaller screens */
-        text-align: center;
-
-    }
-
-    .sidebarcontainer {
-        width: 90%;
-        /* Set width to 90% of the screen width */
-        max-width: 35rem;
-        /* Limit width to 35rem */
-        margin-top: 1rem;
-        /* Adjust margin for smaller screens */
-        text-align: center;
-
-    }
-
-
     .image-container img {
         width: 50%;
         /* margin: auto; */
-    }
-
-    .container2 {
-        flex-direction: column;
     }
 
     .about-me {
@@ -558,6 +529,22 @@ input[name="message"] {
         text-align: center;
         vertical-align: middle;
     }
+
+    .worksidebarcontainer,
+    .sidebarcontainer {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #768da8;
+        padding: 1rem;
+        border-radius: 10rem;
+        height: 2rem;
+        margin-top: 1rem;
+        border: 2px solid transparent;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    }
+
 
     .image-container {
         text-align: center;
@@ -575,6 +562,10 @@ input[name="message"] {
 
     .skills-item {
         width: calc(50% - 20px);
+    }
+
+    .container2 {
+        flex-direction: column;
     }
 }
 
@@ -607,6 +598,34 @@ input[name="message"] {
         padding: 10px;
         text-align: center;
         vertical-align: middle;
+    }
+
+    /* Side bars*/
+    .worksidebarcontainer,
+    .sidebarcontainer {
+        flex-direction: column;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #768da8;
+        padding: 1rem;
+        border-radius: 10rem;
+        height: 7rem;
+        margin-top: 1rem;
+        border: 2px solid transparent;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebarcontent,
+    .sidebarcontent1 {
+        justify-content: center;
+        margin-bottom: 1rem;
+        /* Horizontally center the content */
+    }
+
+    .container2 {
+        flex-direction: column;
     }
 
     /* Profile picture */
