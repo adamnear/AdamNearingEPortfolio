@@ -226,7 +226,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url('../src/img/codeicon.png');
+    /* background-image: url('../src/img/codeicon.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -235,7 +235,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url('../src/img/cameraicon.png');
+    /* background-image: url('../src/img/cameraicon.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -276,10 +276,10 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin-top: 10px;
+    /* background-image: url('../src/img/linkedin-logo.png'); */
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 8px;
+    margin-top: 1px
 }
 
 /* Contact */
@@ -379,6 +379,7 @@ input[name="message"] {
     padding: 2rem;
 }
 
+
 .work-list {
     list-style-type: none;
     padding: 0;
@@ -400,7 +401,7 @@ input[name="message"] {
 }
 
 .media-title {
-    background-image: url('../src/img/backgroundImg2.jpg');
+    background-image: url('../src/img/backgroundImg3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
