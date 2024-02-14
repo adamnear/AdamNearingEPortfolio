@@ -122,6 +122,10 @@
     width: 80vw;
 }
 
+.card {
+    padding: 1.5rem;
+}
+
 .main-content {
     font-family: "Arial", sans-serif;
     font-size: 18px;
@@ -366,6 +370,28 @@ input[name="message"] {
     margin-bottom: 1rem;
 }
 
+.prog-title {
+    background-image: url('../src/img/backgroundImg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 40vh;
+    text-align: center;
+}
+
+.media-title {
+    background-image: url('../src/img/backgroundImg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 40vh;
+    text-align: center;
+}
+
 /* ---------- Skills page ------------ */
 /* Skills */
 .skills-item {
@@ -381,12 +407,13 @@ input[name="message"] {
     align-items: center;
 }
 
-.skills-icon {
+/* .skills-icon {
     width: 80px;
     margin: auto;
     display: block;
     padding: 2rem;
-}
+    
+} */
 
 .cutting-line {
     position: relative;
@@ -403,6 +430,33 @@ input[name="message"] {
     height: 2px;
     background-color: black;
 }
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-item {
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+}
+
+.skills-icon {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 2rem;
+}
+
 
 
 /* ----------- For smaller screens ---------*/
@@ -441,6 +495,8 @@ input[name="message"] {
         max-width: 90%;
         margin-left: 0;
     } */
+
+
     .image-container img {
         width: 50%;
         /* margin: auto; */
@@ -458,6 +514,23 @@ input[name="message"] {
         padding: 10px;
         text-align: center;
         vertical-align: middle;
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 60%;
+        display: inline-block;
+    }
+
+    .skills-row {
+        flex-wrap: wrap;
+    }
+
+    .skills-item {
+        width: calc(50% - 20px);
     }
 }
 
@@ -498,6 +571,14 @@ input[name="message"] {
         text-align: center;
     } */
 
+    .image-container {
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 60%;
+        display: inline-block;
+    }
 
 }
 
@@ -535,6 +616,16 @@ input[name="message"] {
     /* .image-container img {
         max-width: 70%;
     } */
+
+    .image-container {
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 60%;
+        display: inline-block;
+    }
+
 }
 
 /* ------- work Page --------*/
