@@ -142,8 +142,8 @@
 .btn-container {
     background-color: #E16F7C;
     padding: 0.25rem;
-    height: 35px;
-    width: 180px;
+    height: 3rem;
+    width: 10rem;
     margin: auto;
     border-radius: 0.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.703);
@@ -323,7 +323,6 @@ input {
 }
 
 button {
-    margin-top: 10px;
     padding: 1rem;
     width: 200px
 }
@@ -702,13 +701,17 @@ input[name="message"] {
         margin-right: 15px;
     }
 
+    .container2 {
+        margin-top: 13rem;
+    }
+
     .cutting-line {
         margin-left: 20px;
     }
 
     .cutting-line::after {
-        left: calc(60vw / 3);
-        width: 50vw;
+        left: calc(60vw / 4);
+        width: 40vw;
     }
 }
 
@@ -721,6 +724,7 @@ input[name="message"] {
         margin-right: auto;
         /* Center the work card horizontally */
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
@@ -734,7 +738,11 @@ input[name="message"] {
     }
 
     .cutting-line::after {
-        left: calc(60vw / 3);
-        width: 40vw;
+        left: calc(60vw / 5);
+        width: 50vw;
+    }
+
+    .container2 {
+        margin-top: 11rem;
     }
 }
