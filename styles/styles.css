@@ -194,15 +194,30 @@
 /* link-to-work Sidebar */
 .worksidebarcontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #e3e3e3;
-    padding: 3rem;
+    background-color: #768da8;
+    padding: 1rem;
     border-radius: 10rem;
-    width: 5px;
-    height: 70px;
-    margin-top: 10px;
+    width: 35rem;
+    height: 2rem;
+    margin-top: 4rem;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebarcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #768da8;
+    padding: 1rem;
+    border-radius: 10rem;
+    width: 35rem;
+    height: 2rem;
+    margin-top: 1rem;
     border: 2px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
@@ -220,28 +235,33 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin-top: 5px;
     background-image: url('../src/img/cameraicon.png');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
-/* contact Sidebar */
-.sidebarcontainer {
+.sidebarcontent,
+.sidebarcontent1 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #e3e3e3;
-    padding: 3rem;
-    border-radius: 10rem;
-    width: 5px;
-    height: 70px;
-    margin-top: 10px;
-    border: 2px solid transparent;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    /* Align items vertically in the center */
+    /* justify-content: space-around; */
+    /* Distribute items evenly along the main axis */
+    width: 20%;
+    /* Adjust the width as needed */
 }
+
+.sidebar-links {
+    display: flex;
+}
+
+.sidebar-links a {
+    margin: 0 10px;
+    /* Adjust spacing between links */
+}
+
+/* contact Sidebar */
 
 .github-icon {
     display: inline-block;
@@ -496,6 +516,29 @@ input[name="message"] {
         margin-left: 0;
     } */
 
+    /* Side bars*/
+    .worksidebarcontainer {
+        width: 90%;
+        /* Set width to 90% of the screen width */
+        max-width: 35rem;
+        /* Limit width to 35rem */
+        margin-top: 2rem;
+        /* Adjust margin for smaller screens */
+        text-align: center;
+
+    }
+
+    .sidebarcontainer {
+        width: 90%;
+        /* Set width to 90% of the screen width */
+        max-width: 35rem;
+        /* Limit width to 35rem */
+        margin-top: 1rem;
+        /* Adjust margin for smaller screens */
+        text-align: center;
+
+    }
+
 
     .image-container img {
         width: 50%;
@@ -525,6 +568,7 @@ input[name="message"] {
         display: inline-block;
     }
 
+    /* Skills */
     .skills-row {
         flex-wrap: wrap;
     }
