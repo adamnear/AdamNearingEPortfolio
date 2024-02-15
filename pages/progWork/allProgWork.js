@@ -14,7 +14,6 @@ Work will include:
 function addHoverEffectWithDemoText(element) {
     const textOverlay = document.createElement('div');
     textOverlay.classList.add('text-overlay');
-    textOverlay.style.display = 'none';
     element.appendChild(textOverlay);
 
     element.addEventListener('mouseenter', () => {
@@ -26,12 +25,12 @@ function addHoverEffectWithDemoText(element) {
         element.style.transform = 'scale(1)';
         textOverlay.style.display = 'none';
     });
-
 }
 
 // Select and apply hover effect with demo text overlay to relaxation-space
 const relaxationSpace = document.querySelector('.relaxation-space');
 addHoverEffectWithDemoText(relaxationSpace);
+
 
 // Select and apply hover effect with demo text overlay to poker-hand
 const pokerHand = document.querySelector('.poker-hand');
